@@ -22,6 +22,20 @@ function generateRandomNum() {
   console.log(result)
 }
 
+function compareText() {
+  var fromNum = document.getElementById("fromNum").value;
+	if (fromNum > result) {
+    alert('Correct!');
+		// return num1 + ' is the biggest number';
+	} else if (fromNum < result) {
+    alert('Too low!');
+		// return num2 + ' is the biggest number';
+	} else {
+    alert('Correct!')
+		// return num3 + ' is the biggest number';
+	}
+}
+
 // HTML:
 // -----------
 // <p>Text 1: <input id="text1" type="text"></p>
@@ -31,14 +45,18 @@ function generateRandomNum() {
 // <p><button onclick="compareText()">Compare</button></p>
 
 // function compareText() {
-//   var text1 = document.getElementById("text1").value;
-//   var text2 = document.getElementById("text2").value;
+//   var fromNum = document.getElementById("fromNum").value;
+//   // var text2 = document.getElementById("text2").value;
   
-//   if (text1 == text2) {
-//       alert("Same Text!");
+//   if (fromNum == result) {
+//       alert("You are!");
+//   } else if {
+//     (fromNum > result)
+//       alert("Too high.");
 //   } else {
-//       alert("Different Texts.");
-//   }
+//     (fromNum < result)
+//     alert("Too low.");
+// }
 // }
 
 
