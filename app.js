@@ -8,21 +8,35 @@
 */
 
 
-var userEntry = document.getElementById('numberGuess');
-var subBtn = document.getElementsByTagName('submit');
-var rdmNum = document.getElementById('random_number').innerHTML = Math.random();
+    var userNumber = 10
+    var counter = 0
+    var maxTries = 3
+    const randomNumber = Math.floor(Math.random() * userNumber) + 1
+    console.log('Random Number', randomNumber)
 
-console.log(subBtn)
-userEntry.addEventListener('click', () => {
-    console.log('I hear it');
-})
+    function checkGuess() {
+        console.log('hi')
+      let myGuess = guess.value
+      if (myGuess === randomNumber) {
+        alert("Your guess was " + myGuess +" You got it right!");
 
-var noShow = function () {
-    n
-}
+      } else if (myGuess > randomNumber) {
+        alert("Your guess was " + myGuess + ". That's too high. Try Again!");
+             
+      } else if (myGuess < randomNumber) {
+          alert("Your guess was " + myGuess + ". That's too low. Try Again!");
+    
+     }
+   }
+   submitGuess.addEventListener('click', checkGuess)
 
 
 
-subBtn.addEventListener('click', () => {
-    console.log('btn');
-})
+
+
+
+
+
+
+
+
